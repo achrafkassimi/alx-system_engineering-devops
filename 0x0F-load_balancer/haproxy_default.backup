@@ -13,15 +13,3 @@ backend clickviral-tech-backend
     server 529522-web-01 54.172.193.230:80 check
     server 529522-web-02 100.26.20.223:80 check
 
-
-#--beta-scribbles.tech-params-begin--
-backend beta-scribbles.tech-backend
-	balance roundrobin
-  server 529522-web-01 54.172.193.230:80 check
-  server 529522-web-02 100.26.20.223:80 check
-frontend beta-scribbles.tech-frontend
-	bind *:80
-	mode http
-	default_backend beta-scribbles.tech-backend
-#--beta-scribbles.tech-params-end--
-
