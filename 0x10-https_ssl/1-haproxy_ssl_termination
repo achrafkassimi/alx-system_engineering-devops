@@ -49,8 +49,8 @@ frontend www-frontend-https
 
 backend www-backend
         balance roundrobin
-        server 529522-web-01 54.172.193.230:80 check
-        server 529522-web-02 100.26.20.223:80 check
+        server 529522-web-01 34.203.77.238:80 check
+        server 529522-web-02 52.91.202.203:80 check
 
 backend letsencrypt-backend
         server letsencrypt 127.0.0.1:54321
