@@ -9,7 +9,7 @@ def top_ten(subreddit):
 
     sub_info = requests.get("https://www.reddit.com/r/{}/hot.json?limit=10"
                             .format(subreddit),
-                            headers={"User-Agent": "My-User-Agent"},
+                            headers={"User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"},
                             allow_redirects=False)
     if sub_info.status_code >= 300:
         print('None')
