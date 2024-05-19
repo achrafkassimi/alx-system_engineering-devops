@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-Lets see
+# Lets see
+
+pgrep gunicorn | xargs kill -HUP
